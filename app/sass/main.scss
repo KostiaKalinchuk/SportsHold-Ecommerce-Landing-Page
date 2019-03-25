@@ -68,7 +68,11 @@
     }
   }
 }
-
+header {
+  z-index: 55;
+  position: absolute;
+  width: 100%;
+}
 .big-header {
   background-color: #623232;
   .container {
@@ -102,191 +106,105 @@
 }
 
 
-
-
-
-
-.product {
-  margin-top: 100px;
-  display: grid;
-  grid-template-columns: 35% 48%;
-  grid-column-gap: 90px;
-  .slider {
-    .slideshow div img {
-      margin: 0 auto;
-    }
-    .menu-slider {
-      text-align: center;
-      a {
-        width: 95px;
-        height: 69px;
-        background-color: #f4f6f8;
-        margin-left: 15px;
-        display: inline-block;
-        margin-top: 60px;
-        img {
-          width: 30px;
-          height: 55px;
-          margin-top: 10px;
-        }
-      }
-      a:focus {
-        background-color: #ff5912;
-        opacity: 0.7;
-      }
-    }
+.banner {
+  background-color: #f0efee;
+  overflow: hidden;
+  display: flex;
+  //margin-top: 100px;
+  height: 590px;
+  img {
+    height: 570px;
+    width: 755px;
+    margin-left: -115px;
+    margin-top: 55px;
+    z-index: 99;
+    position: relative;
   }
   .description {
-    h1 {
-      margin: 0;
-      color: #ff5912;
-      font-size: 52px;
-      font-weight: 600;
-      text-transform: uppercase;
+    //margin-top: 210px;
+    //margin-left: 60px;
+    margin: 210px 0 0 60px;
+    .price {
+      color: #623232;
+      font-size: 30px;
+      font-weight: 400;
     }
-    h4 {
-      color: #3c4751;
-      font-size: 18px;
+    .name {
+      color: #623232;
+      font-family: "Trueno Ult Blk";
+      font-size: 70px;
+      font-weight: 400;
+    }
+    .variants {
+      color: #ff7373;
+      font-family: "Trueno Ult Blk";
+      font-size: 50px;
       font-weight: 400;
     }
     p {
-      color: #495662;
-      line-height: 29.97px;
-      margin-bottom: 35px;
+      color: #8a8784;
+      margin-bottom: 50px;
     }
-    .selectors {
-      display: flex;
-      justify-content: space-between;
-      margin: 35px 0 35px 0;
-      .choos {
-        color: #34404b;
-        font-size: 18px;
-        font-weight: 400;
-        margin-right: 20px;
-      }
-      .size {
-
-        label {
-          color: #34404b;
-          font-size: 14px;
-          font-weight: 400;
-          text-transform: uppercase;
-          cursor: pointer;
-        }
-
-        label:after {
-          content: ' - ';
-          font-size: 18px;
-          font-weight: 600;
-          color: #34404b;
-          opacity: 0.82;
-        }
-
-        label:last-child:after {
-          display: none;
-        }
-
-        input[type="radio"] {
-          display: none;
-        }
-
-        input:checked + label {
-          color: #ff5912;
-          font-size: 18px;
-        }
-      }
-      .quantity {
-        .counter {
-          input {
-            width: 20px;
-            text-align: center;
-            color: #ff5912;
-            font-size: 18px;
-            border: none;
-          }
-          button {
-            font-size: 18px;
-            color: #34404b;
-            font-weight: 600;
-            border: none;
-            background: none;
-            cursor: pointer;
-            opacity: 0.82;
-          }
-        }
-      }
-    }
-    .order {
-      display: flex;
-      justify-content: space-between;
-      margin: 50px 0 100px 0;
-      .price {
-        color: #34404b;
-        font-size: 20px;
-        font-weight: 600;
-        margin: auto 0;
-      }
-      .wrapper {
-        display: flex;
-        justify-content: space-between;
-      }
-      .order-link a img {
-        margin-right: 20px;
-        margin-top: 7px;
-      }
-      .order-btn {
-        color: #ffffff;
-        text-decoration: none;
-        padding: 10px 20px;
-        border-radius: 25px;
-        background-color: #ff5912;
-      }
+    a {
+      background-color: #ff7373;
+      color: #ffffff;
+      font-family: "Trueno Bd";
+      text-transform: uppercase;
+      padding: 16px 47px 16px 47px;
+      text-decoration: none;
     }
   }
 }
+
+
+
+
+
+
+
 
 // menuToggle
 
-.menuToggle {
-  color: #fff;
-  cursor: pointer;
-  display: none;
-  width: 35px;
-  height: 25px;
-  position: relative;
-  span {
-    display: block;
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    background: #34404b;
-    border-radius: 2px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
-    margin-top: 10px;
-  }
-  span:nth-child(1) {
-    top: 0;
-  }
-  span:nth-child(2), .menu-icon span:nth-child(3) {
-    top: 10px;
-  }
-  span:nth-child(4) {
-    top: 20px;
-  }
-}
+//.menuToggle {
+//  color: #fff;
+//  cursor: pointer;
+//  display: none;
+//  width: 35px;
+//  height: 25px;
+//  position: relative;
+//  span {
+//    display: block;
+//    position: absolute;
+//    height: 4px;
+//    width: 100%;
+//    background: #34404b;
+//    border-radius: 2px;
+//    opacity: 1;
+//    left: 0;
+//    transform: rotate(0deg);
+//    transition: .25s ease-in-out;
+//    margin-top: 10px;
+//  }
+//  span:nth-child(1) {
+//    top: 0;
+//  }
+//  span:nth-child(2), .menu-icon span:nth-child(3) {
+//    top: 10px;
+//  }
+//  span:nth-child(4) {
+//    top: 20px;
+//  }
+//}
 
-.menu {
-  list-style-type: none;
-  padding: 0;
-  display: none;
-  li a {
-    display: inline-block;
-    padding: 10px 15px;
-    text-decoration: none;
-  }
-}
+//.menu {
+//  list-style-type: none;
+//  padding: 0;
+//  display: none;
+//  li a {
+//    display: inline-block;
+//    padding: 10px 15px;
+//    text-decoration: none;
+//  }
+//}
 
 @import "media";
