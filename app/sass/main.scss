@@ -156,6 +156,39 @@ header {
   }
 }
 
+.banners {
+  margin-top: 50px;
+  display: flex;
+  .banners__kyrie {
+    img {
+      width: 474px;
+      height: 474px;
+    }
+  }
+  .banners__others {
+    margin-left: 20px;
+    margin-top: -18px;
+    .arrivals {
+      img {
+        width: 474px;
+      }
+    }
+    .athletes {
+      margin-left: 9px;
+
+      img {
+        width: 220px;
+        margin-top: 30px;
+      }
+    }
+    .premium {
+      margin-left: 20px;
+      img {
+        width: 220px;
+      }
+    }
+  }
+}
 
 
 
