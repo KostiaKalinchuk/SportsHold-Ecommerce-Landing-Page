@@ -98,7 +98,7 @@ $('.tabs a').click(function () {
 // var content = document.getElementsByClassName('portfolio-list').innerHTML;
 
 
-
+//slider
 
 $(document).ready(function () {
     $("#comments-slider").owlCarousel({
@@ -106,6 +106,6 @@ $(document).ready(function () {
         slideSpeed: 100,
         paginationSpeed: 800,
         singleItem: true,
-        autoPlay: false
+        autoPlay: true
     });
 });
