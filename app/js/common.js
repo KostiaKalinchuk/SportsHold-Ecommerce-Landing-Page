@@ -96,3 +96,16 @@ $('.tabs a').click(function () {
 //
 // document.getElementsByClassName('portfolio-list')[0].innerHTML = arr;
 // var content = document.getElementsByClassName('portfolio-list').innerHTML;
+
+
+
+
+$(document).ready(function () {
+    $("#comments-slider").owlCarousel({
+        navigation: false,
+        slideSpeed: 100,
+        paginationSpeed: 800,
+        singleItem: true,
+        autoPlay: false
+    });
+});
