@@ -83,3 +83,16 @@ $('.tabs a').click(function () {
 
 
 
+//sort in work
+
+// var nodelist = document.querySelectorAll('.portfolio-list__item');
+// var arr = Array.from(nodelist);
+//
+// console.log( arr );
+//
+// arr.reverse();
+// console.log( arr );
+//
+//
+// document.getElementsByClassName('portfolio-list')[0].innerHTML = arr;
+// var content = document.getElementsByClassName('portfolio-list').innerHTML;
