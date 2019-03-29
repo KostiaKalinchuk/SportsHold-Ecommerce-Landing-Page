@@ -106,6 +106,6 @@ $(document).ready(function () {
         slideSpeed: 100,
         paginationSpeed: 800,
         singleItem: true,
-        autoPlay: true
+        autoPlay: false //змінити по закінченню на true
     });
 });

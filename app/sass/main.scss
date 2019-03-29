@@ -372,6 +372,10 @@ header {
   margin-top: 80px;
 }
 
+
+
+
+
 .testimonials {
   margin-top: 100px;
   position: relative;
@@ -387,15 +391,12 @@ header {
   opacity: 0.95;
 }
 
-
-
-
-
 #comments-slider {
   margin: 0 auto;
   width: 100%;
-  padding-top: 10em;
+  padding-top: 9em;
 }
+
 .quote {
   background: #3E3831;
   padding: 15px 20px 5px 15px;
@@ -414,10 +415,12 @@ header {
   top: 37px;
   left: 20px;
 }
+
 .persona {
   margin-left: 30px;
   margin-bottom: 30px;
 }
+
 .persona .photo {
   border-radius: 100px;
   width: 60px;
@@ -425,20 +428,80 @@ header {
   float: left;
   margin-right: 10px;
 }
+
 .persona p {
   position: relative;
   top: 5px;
   color: #ffffff;
 }
+
 .persona p:nth-child(3) {
   font-size: 12px;
 }
 
+h1 {
+  text-align: center;
+  color: #623232;
+  font-family: "Trueno Bd";
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 100px;
+}
 
+.news {
+  display: flex;
+  justify-content: space-between;
+}
 
+.news-block {
 
+  margin-top: 50px;
+  width: 300px;
+  height: 300px;
+}
 
+.news-mask img {
+  width: 300px;
+  height: 300px;
+  opacity: 0.4;
+}
 
+.news-mask {
+  position: relative;
+  background-color: #472424;
+}
+
+.text {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  color: #ffffff;
+}
+
+.text h5 {
+  font-family: "Trueno Bd";
+  margin: 0;
+}
+
+.text p {
+  margin: 5px 0 5px 0;
+}
+
+.text span {
+  display: inline-block;
+  color: #ff7373;
+  font-size: 13px;
+  padding: 5px;
+  vertical-align: bottom;
+
+}
+
+.text img {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+}
 
 // menuToggle
 
