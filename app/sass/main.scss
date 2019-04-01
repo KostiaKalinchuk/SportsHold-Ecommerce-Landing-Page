@@ -6,7 +6,6 @@
 //Main container
 
 .container {
-  //width: 70%;
   margin: 0 auto;
   width: 968px;
 }
@@ -648,48 +647,8 @@ hr {
   opacity: 0.15;
 }
 
-// menuToggle
-
-//.menuToggle {
-//  color: #fff;
-//  cursor: pointer;
-//  display: none;
-//  width: 35px;
-//  height: 25px;
-//  position: relative;
-//  span {
-//    display: block;
-//    position: absolute;
-//    height: 4px;
-//    width: 100%;
-//    background: #34404b;
-//    border-radius: 2px;
-//    opacity: 1;
-//    left: 0;
-//    transform: rotate(0deg);
-//    transition: .25s ease-in-out;
-//    margin-top: 10px;
-//  }
-//  span:nth-child(1) {
-//    top: 0;
-//  }
-//  span:nth-child(2), .menu-icon span:nth-child(3) {
-//    top: 10px;
-//  }
-//  span:nth-child(4) {
-//    top: 20px;
-//  }
-//}
-
-//.menu {
-//  list-style-type: none;
-//  padding: 0;
-//  display: none;
-//  li a {
-//    display: inline-block;
-//    padding: 10px 15px;
-//    text-decoration: none;
-//  }
-//}
+.menu-toggle {
+  display: none;
+}
 
 @import "media";

@@ -1,96 +1,598 @@
 @import "vars";
 
-@media screen and (min-width: 1090px) and (max-width: 1305px) {
-  .container .product .description .order {
-    display: flex;
-    justify-content: space-around;
+@media (min-width: 992px) and (max-width: 1199px) {
+  .small-header .container .small-menu li {
+    margin: 0 25px 0 0;
   }
-  .container .product .slider .menu-slider a {
-    margin-left: 0;
+  .main-menu ul li {
+    font-size: 13px;
   }
-}
-
-@media screen and (min-width: 800px) and (max-width: 1089px) {
-  .container .product .description .order {
-    display: flex;
-    justify-content: space-around;
-  }
-  .container .product .slider .menu-slider a {
-    margin-left: 0;
-  }
-  .container .product .description .selectors .choos {
-    margin-bottom: 10px;
-    display: block;
-  }
-  .container .product .description .order .order-link a img {
-    margin-right: 5px;
-  }
-  .container .product .slider .menu-slider a {
-    width: 65px;
-    height: 59px;
-    background-color: #f4f6f8;
-    margin-left: 0;
-    margin-top: 20px;
-  }
-  .container .product .slider .menu-slider a img {
-    margin-top: 0;
-
-  }
-  .container .big-header a {
-    margin-right: 25px;
-  }
-  .container .big-header .info .basket .badge {
-    right: 31px;
+  .banner .description {
+    margin: 155px 0 0 10px;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 799px) {
-  .container .small-header {
-    margin: 25px 25px 25px 25px;
-    display: block;
-    .social {
-      img {
-        margin-top: 25px;
-      }
-    }
-  }
+@media (min-width: 769px) and (max-width: 991px) {
   .container {
-    width: 90%;
+    width: 700px;
   }
-  .container .big-header .logo img {
-    width: 90px;
-    margin-top: 10px;
+  .banner {
+    height: 500px;
   }
-  .container .big-header .main-menu {
-    display: none;
+  .small-header .container .small-menu li {
+    margin: 0 20px 0 0;
   }
-  .container .product {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-row-gap: 30px;
+  .banner img {
+    height: 470px;
+    width: 600px;
+    margin-left: -90px;
   }
-  .container .product .slider .menu-slider a {
-    margin-top: 20px;
+  .banner .description {
+    margin: 165px 0 0 10px;
   }
-  .container .product .description .selectors .choos {
-    margin-right: 8px;
+
+  .banner .description .price {
+    font-size: 25px;
   }
-  .container .big-header {
-    grid-template-columns: 25% 35% 35%;
-    margin: 20px 0 20px 0;
+  .banner .description .name {
+    font-size: 45px;
   }
-  .menuToggle {
+  .banner .description .variants {
+    font-size: 35px;
+  }
+  .banner .description p {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  .banner .description a {
+    padding: 15px 35px 15px 35px;
+    font-size: 13px;
+  }
+  .menu-toggle {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    width: 37px;
+    cursor: pointer;
+  }
+  .menu-toggle span {
     display: block;
+    height: 3px;
+    background: #fff;
   }
-  .menu {
+  .menu-toggle span + span {
+    margin-top: 8px;
+  }
+  .big-header .container .main-menu {
     display: none;
     position: absolute;
-    background: #ffffff;
-    z-index: 999;
-    margin-top: 45px;
+    top: 100%;
+    margin-top: 10px;
+    margin-left: 550px;
+    width: 150px;
+    background: rgba(0, 0, 0, 0.7);
   }
-  .menu li {
-    float: none;
+  .big-header .container .main-menu ul li {
+    text-align: justify;
+    padding: 0;
+    border: none;
+  }
+  .big-header .container .main-menu ul li:hover {
+    border: none;
+  }
+  .big-header .container .main-menu ul li a:hover {
+    color: #ff7373;
+  }
+  .main-menu ul {
+    flex-direction: column;
+  }
+  .main-menu ul li a {
+    display: block;
+    padding: 5px 0 5px 0;
+  }
+  .banners .banners__kyrie img {
+    width: 345px;
+    height: 345px;
+  }
+  .banners .banners__others {
+    margin-left: 15px;
+    margin-top: -14px;
+  }
+  .banners .banners__others .arrivals img {
+    width: 345px;
+  }
+  .banners .banners__others .athletes {
+    margin-left: 7px;
+  }
+  .banners .banners__others .athletes img {
+    width: 167px;
+    margin-top: 15px;
+  }
+  .banners .banners__others .premium {
+    margin-left: 2px;
+  }
+  .banners .banners__others .premium img {
+    width: 167px;
+  }
+  .products .box-tab-cont .tab-cont .product-list .product-list__item {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    &:nth-child(3),
+    &:nth-child(6) {
+      margin-right: 0;
+    }
+    &:nth-child(4) {
+      margin-right: 20px;
+    }
+  }
+  .container .news a .news-block {
+    width: 220px;
+    height: 220px;
+  }
+  .container .news a .news-block .news-mask img {
+    width: 220px;
+    height: 220px;
+  }
+  .help .container .help-mail img {
+    height: 32px;
+    margin-right: 15px;
+  }
+  .help .container .help-mail p {
+    font-size: 20px;
+  }
+  .help .container .help-mail p small {
+    font-size: 14px;
+  }
+  .help .container a {
+    padding: 10px 20px 10px 20px;
+    font-size: 14px;
+  }
+  footer .container .links {
+    font-size: 14px;
+  }
+  footer .container .links .contacts .contacts-block p small {
+    font-size: 13px;
+  }
+  footer .container .links .navigation h6 {
+    font-size: 14px;
+  }
+  footer .container .links .contacts .contacts-block img {
+    margin-right: 15px;
+    padding: 14px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  .container {
+    width: 580px;
+  }
+  .banner {
+    height: 415px;
+  }
+  .small-header .container .small-menu li {
+    margin: 0 10px 0 0;
+    font-size: 12px;
+  }
+  .banner img {
+    height: 370px;
+    width: 500px;
+    margin-left: -80px;
+    margin-top: 70px;
+  }
+  .banner .description {
+    margin: 155px 0 0 0;
+  }
+  .banner .description .price {
+    font-size: 20px;
+  }
+  .banner .description .name {
+    font-size: 35px;
+  }
+  .banner .description .variants {
+    font-size: 25px;
+  }
+  .banner .description p {
+    font-size: 12px;
+    margin-bottom: 25px;
+  }
+  .banner .description a {
+    padding: 10px 25px 10px 25px;
+    font-size: 12px;
+  }
+  .menu-toggle {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    width: 37px;
+    cursor: pointer;
+  }
+  .menu-toggle span {
+    display: block;
+    height: 3px;
+    background: #fff;
+  }
+  .menu-toggle span + span {
+    margin-top: 8px;
+  }
+  .big-header .container .main-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    margin-top: 10px;
+    margin-left: 430px;
+    width: 150px;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .big-header .container .main-menu ul li {
+    text-align: justify;
+    padding: 0;
+    border: none;
+  }
+  .big-header .container .main-menu ul li:hover {
+    border: none;
+  }
+  .big-header .container .main-menu ul li a:hover {
+    color: #ff7373;
+  }
+  .main-menu ul {
+    flex-direction: column;
+  }
+  .main-menu ul li a {
+    display: block;
+    padding: 5px 0 5px 0;
+  }
+  .banners .banners__kyrie img {
+    width: 290px;
+    height: 290px;
+  }
+  .banners .banners__others {
+    margin-left: 10px;
+    margin-top: -11px;
+  }
+  .banners .banners__others .arrivals img {
+    width: 290px;
+  }
+  .banners .banners__others .athletes {
+    margin-left: 7px;
+  }
+  .banners .banners__others .athletes img {
+    width: 138px;
+    margin-top: 12px;
+  }
+  .banners .banners__others .premium {
+    margin-left: 2px;
+  }
+  .banners .banners__others .premium img {
+    width: 138px;
+  }
+  .products {
+    margin-top: 50px;
+  }
+  .products .box-tab-cont .tab-cont .product-list {
+    justify-content: space-around;
+  }
+  .products .nav-tab-list {
+    margin-bottom: 25px;
+  }
+  .products .nav-tab-list .nav-tab-list__item .nav-tab-list__link {
+    font-size: 25px;
+  }
+  .products .box-tab-cont .tab-cont .product-list .product-list__item {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+    &:nth-child(6) {
+      margin-right: 0;
+    }
+  }
+  .brands {
+    margin-top: 40px;
+  }
+  .brands a img {
+    width: 70%;
+    height: 50%;
+  }
+  .testimonials {
+    margin-top: 50px;
+    height: 450px;
+  }
+  .testimonials .mask .container #comments-slider {
+    padding-top: 4em;
+  }
+
+  .container h1 {
+    font-size: 25px;
+    margin-top: 50px;
+  }
+  .container .news a .news-block {
+    width: 185px;
+    height: 185px;
+    margin-top: 20px;
+  }
+  .container .news a .news-block .news-mask img {
+    width: 185px;
+    height: 185px;
+  }
+  .container .news a .news-block .news-mask .text {
+    font-size: 12px;
+  }
+  .help {
+    margin-top: 60px;
+  }
+
+  .help .container {
+    height: 130px;
+  }
+  .help .container .help-mail img {
+    height: 25px;
+    margin-right: 10px;
+  }
+  .help .container .help-mail p {
+    font-size: 18px;
+  }
+  .help .container .help-mail p small {
+    font-size: 12px;
+  }
+  .help .container a {
+    padding: 8px 15px 8px 15px;
+    font-size: 12px;
+  }
+  footer .container .info-blocks .info-block p {
+    font-size: 12px;
+  }
+  footer .container .links {
+    font-size: 14px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  footer .container .links .contacts .contacts-block p small {
+    font-size: 13px;
+  }
+  footer .container .links .navigation h6 {
+    font-size: 14px;
+  }
+  footer .container .links .contacts .contacts-block img {
+    margin-right: 15px;
+    padding: 14px;
+  }
+  footer .container .links .navigation:last-child {
+    margin-left: 255px;
+  }
+  footer .container .footer {
+    padding: 25px 0 25px 0;
+  }
+  footer .container .footer .copiright {
+    font-size: 12px;
+  }
+  footer .container .footer .social .social__link {
+    font-size: 18px;
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 639px) {
+  .container {
+    width: 400px;
+  }
+  .banner {
+    height: 320px;
+  }
+  .small-header .container .small-menu {
+    display: none;
+  }
+  .small-header .container .client-info .basket {
+    font-size: 12px;
+    margin-right: 15px;
+  }
+  .small-header .container .client-info .basket img {
+    margin-right: 5px;
+  }
+  .small-header .container .client-info .registration a {
+    font-size: 12px;
+    padding: 10px;
+  }
+  .banner img {
+    height: 270px;
+    width: 500px;
+    margin-left: -70px;
+    margin-top: 70px;
+  }
+  .banner .description {
+    margin: 145px 0 0 0;
+  }
+  .banner .description .price {
+    font-size: 15px;
+  }
+  .banner .description .name {
+    font-size: 25px;
+  }
+  .banner .description .variants {
+    font-size: 15px;
+  }
+  .banner .description p {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+  .banner .description a {
+    padding: 8px 20px 8px 20px;
+    font-size: 10px;
+  }
+  .menu-toggle {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    width: 30px;
+    cursor: pointer;
+  }
+  .menu-toggle span {
+    display: block;
+    height: 2px;
+    background: #fff;
+  }
+  .menu-toggle span + span {
+    margin-top: 5px;
+  }
+  .big-header .container .main-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    margin-top: 10px;
+    margin-left: 250px;
+    width: 150px;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .big-header .container .main-menu ul li {
+    text-align: justify;
+    padding: 0;
+    border: none;
+  }
+  .big-header .container .main-menu ul li:hover {
+    border: none;
+  }
+  .big-header .container .main-menu ul li a:hover {
+    color: #ff7373;
+  }
+  .main-menu ul {
+    flex-direction: column;
+  }
+  .main-menu ul li a {
+    display: block;
+    padding: 5px 0 5px 0;
+    font-size: 14px;
+  }
+
+  .banners .banners__kyrie img {
+    width: 200px;
+    height: 200px;
+  }
+  .banners .banners__others {
+    margin-left: 10px;
+    margin-top: -11px;
+  }
+  .banners .banners__others .arrivals img {
+    width: 200px;
+  }
+  .banners .banners__others .athletes {
+    margin-left: 4px;
+  }
+  .banners .banners__others .athletes img {
+    width: 94px;
+    margin-top: 12px;
+  }
+  .banners .banners__others .premium {
+    margin-left: 3px;
+  }
+  .banners .banners__others .premium img {
+    width: 95px;
+  }
+  .products {
+    margin-top: 50px;
+  }
+  .products .box-tab-cont .tab-cont .product-list {
+    justify-content: center;
+  }
+  .products .nav-tab-list {
+    margin-bottom: 25px;
+  }
+  .products .nav-tab-list .nav-tab-list__item .nav-tab-list__link {
+    font-size: 15px;
+    margin-left: 20px;
+  }
+  .products .box-tab-cont .tab-cont .product-list .product-list__item {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    &:nth-child(4) {
+      margin-right: 20px;
+    }
+    &:nth-child(8) {
+      margin-right: 20px;
+    }
+  }
+  .brands {
+    margin-top: 40px;
+  }
+  .brands a img {
+    width: 70%;
+    height: 50%;
+  }
+  .testimonials {
+    margin-top: 50px;
+    height: 450px;
+  }
+  .testimonials .mask .container #comments-slider {
+    padding-top: 1.5em;
+  }
+
+  .container h1 {
+    font-size: 25px;
+    margin-top: 50px;
+  }
+  .container .news {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .help {
+    margin-top: 50px;
+  }
+
+  .help .container {
+    height: 130px;
+    flex-wrap: wrap;
+  }
+  .help .container .help-mail img {
+    height: 25px;
+    margin-right: 10px;
+  }
+  .help .container .help-mail p {
+    font-size: 18px;
+  }
+  .help .container .help-mail p small {
+    font-size: 12px;
+  }
+  .help .container a {
+    padding: 8px 15px 8px 15px;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  footer .container .info-blocks .info-block p {
+    font-size: 12px;
+  }
+  footer .container .info-blocks {
+    flex-wrap: wrap;
+  }
+  footer .container .links {
+    font-size: 14px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  footer .container .links .contacts .contacts-block p small {
+    font-size: 13px;
+  }
+  footer .container .links .navigation h6 {
+    font-size: 14px;
+  }
+  footer .container .links .contacts .contacts-block img {
+    margin-right: 15px;
+    padding: 14px;
+  }
+  footer .container .footer {
+    padding: 25px 0 25px 0;
+  }
+  footer .container .footer .copiright {
+    font-size: 12px;
+  }
+  footer .container .footer .social .social__link {
+    font-size: 18px;
+    margin-left: 15px;
+  }
+  .footer img {
+    display: none;
   }
 }
